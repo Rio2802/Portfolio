@@ -73,17 +73,17 @@ const HeroSection = () => {
                   <p
                     className={cn(
                       "md:self-start md:mt-4 font-thin text-md text-slate-500 dark:text-zinc-400 ml-3",
-                      "cursor-default font-display sm:text-xl md:text-xl bg-clip-text "
+                      "cursor-default font-display sm:text-xl md:text-xl bg-clip-text max-w-md"
                     )}
                   >
-                    Full-Stack Developer <br /> AI & ML Enthusiast <br /> Web & Android App Development <br /> React, Python, Flask, Next.js
+                    Full-Stack Developer | AI & ML Enthusiast | Web & Android App Development | React, Python, Flask, Next.js
                   </p>
                 </BlurIn>
               </div>
               <div className="mt-8 md:ml-2 flex flex-col gap-3">
                 <Link
                   href={
-                    "https://drive.google.com/file/d/1DPKccmED4VRIws0b9a2Ibpx_3Wx-Rw7K/view?usp=drive_link"
+                    "https://drive.google.com/file/d/1vjtWfqYGMIMK_rlBnmDEpKco9MiEaQss/view"
                   }
                   target="_blank"
                   className="flex-1"

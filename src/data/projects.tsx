@@ -418,8 +418,8 @@ const projects: Project[] = [
       frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.web3],
       backend: [],
     },
-    live: "https://github.com/Rio2802/IPFS_IMG_upload",
-    github: "https://github.com/Rio2802/IPFS_IMG_upload",
+    live: "https://github.com/Rio2802/DecentFile.git",
+    github: "https://github.com/Rio2802/DecentFile.git",
     get content() {
       return (
         <div>
