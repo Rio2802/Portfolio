@@ -33,7 +33,7 @@ const config = {
   social: {
     twitter: "https://x.com/ngond49", // Kept as is, not in resume but likely same handle
     linkedin: "https://www.linkedin.com/in/nishchal-g-741a64107/",
-    instagram: "https://www.instagram.com/nishchal.gond/", // Kept as is
+    instagram: "https://www.instagram.com/rio.zen7/", // Kept as is
     facebook: "https://www.facebook.com/nishchal.gond", // Kept as is
     github: "https://github.com/Rio2802",
   },
