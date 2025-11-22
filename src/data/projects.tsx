@@ -351,7 +351,7 @@ const projects: Project[] = [
         <div>
           <TypographyP className="font-mono ">
             Investigated AI application in adaptive learning systems for the purpose of boosting student engagement.
-            Created and introduced a custom-made recommendation system that selects study materials according to the learners' performance.
+            Created and introduced a custom-made recommendation system that selects study materials according to the learners&apos; performance.
             Carried out a data analysis of the system coupled with student feedback to measure its efficiency hence acquiring improved learning outcomes.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
@@ -377,7 +377,7 @@ const projects: Project[] = [
           <TypographyP className="font-mono ">
             Created a NPL chatbot intelligent enough for conversation.
             Made a modular backend to cut deployment time by approximately 15%.
-            To improve the quality of responses and increase user's pleasure, sentiment analysis was applied.
+            To improve the quality of responses and increase user&apos;s pleasure, sentiment analysis was applied.
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
