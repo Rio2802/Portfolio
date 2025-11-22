@@ -38,7 +38,11 @@ import {
   SiPytorch,
   SiFlask,
   SiMysql,
+  SiPhp,
+  SiWeb3Dotjs,
+  SiAmazonaws,
 } from "react-icons/si";
+import { TbBrandReactNative } from "react-icons/tb";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import css from "styled-jsx/css";
 const BASE_PATH = "/assets/projects-screenshots";
@@ -320,6 +324,30 @@ const PROJECT_SKILLS = {
     fg: "white",
     icon: <SiMysql />,
   },
+  php: {
+    title: "PHP",
+    bg: "black",
+    fg: "white",
+    icon: <SiPhp />,
+  },
+  web3: {
+    title: "Web3.js",
+    bg: "black",
+    fg: "white",
+    icon: <SiWeb3Dotjs />,
+  },
+  reactNative: {
+    title: "React Native",
+    bg: "black",
+    fg: "white",
+    icon: <TbBrandReactNative />,
+  },
+  aws: {
+    title: "AWS",
+    bg: "black",
+    fg: "white",
+    icon: <SiAmazonaws />,
+  },
 };
 export type Project = {
   id: string;
@@ -335,24 +363,22 @@ export type Project = {
 
 const projects: Project[] = [
   {
-    id: "ai-education",
-    category: "AI & Education",
-    title: "AI-Based Tailored Education",
-    src: "/assets/projects-screenshots/ai-education/1.png", // Placeholder
-    screenshots: ["/assets/projects-screenshots/ai-education/1.png"],
+    id: "smartride-manager",
+    category: "Mobile App",
+    title: "SmartRide Manager",
+    src: "/assets/projects-screenshots/smartride-manager/1.png",
+    screenshots: ["/assets/projects-screenshots/smartride-manager/1.png"],
     skills: {
-      frontend: [],
-      backend: [PROJECT_SKILLS.python, PROJECT_SKILLS.tensorflow, PROJECT_SKILLS.pytorch], // Assuming AI stack
+      frontend: [PROJECT_SKILLS.reactNative],
+      backend: [PROJECT_SKILLS.firebase],
     },
-    live: "https://github.com/Rio2802", // No live link in resume, pointing to profile
-    github: "https://github.com/Rio2802",
+    live: "https://github.com/Rio2802/SmartRideManager",
+    github: "https://github.com/Rio2802/SmartRideManager",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Investigated AI application in adaptive learning systems for the purpose of boosting student engagement.
-            Created and introduced a custom-made recommendation system that selects study materials according to the learners&apos; performance.
-            Carried out a data analysis of the system coupled with student feedback to measure its efficiency hence acquiring improved learning outcomes.
+            React Native + Firebase app for bike maintenance tracking
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -360,24 +386,22 @@ const projects: Project[] = [
     },
   },
   {
-    id: "jade-chatbot",
-    category: "NLP & AI",
-    title: "J.A.D.E. Chatbot: NLP-Based Chatbot",
-    src: "/assets/projects-screenshots/jade/1.png", // Placeholder
+    id: "jade",
+    category: "AI & Automation",
+    title: "J.A.D.E",
+    src: "/assets/projects-screenshots/jade/1.png",
     screenshots: ["/assets/projects-screenshots/jade/1.png"],
     skills: {
       frontend: [],
-      backend: [PROJECT_SKILLS.python, PROJECT_SKILLS.flask, PROJECT_SKILLS.tensorflow], // Assuming NLP stack
+      backend: [PROJECT_SKILLS.python],
     },
-    live: "https://github.com/Rio2802",
-    github: "https://github.com/Rio2802",
+    live: "https://github.com/Rio2802/J.A.D.E",
+    github: "https://github.com/Rio2802/J.A.D.E",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Created a NPL chatbot intelligent enough for conversation.
-            Made a modular backend to cut deployment time by approximately 15%.
-            To improve the quality of responses and increase user&apos;s pleasure, sentiment analysis was applied.
+            AI-based assistant leveraging NLP for automation
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
@@ -385,24 +409,91 @@ const projects: Project[] = [
     },
   },
   {
-    id: "hitch-project",
-    category: "Web Development",
-    title: "The HITCH Project: DBMS Website",
-    src: "/assets/projects-screenshots/hitch/1.png", // Placeholder
-    screenshots: ["/assets/projects-screenshots/hitch/1.png"],
+    id: "ipfs-img-upload",
+    category: "Web3",
+    title: "IPFS IMG Upload",
+    src: "/assets/projects-screenshots/ipfs-img-upload/1.png",
+    screenshots: ["/assets/projects-screenshots/ipfs-img-upload/1.png"],
     skills: {
-      frontend: [PROJECT_SKILLS.react, PROJECT_SKILLS.js, PROJECT_SKILLS.css],
-      backend: [PROJECT_SKILLS.node, PROJECT_SKILLS.sql, PROJECT_SKILLS.mongo],
+      frontend: [PROJECT_SKILLS.js, PROJECT_SKILLS.web3],
+      backend: [],
     },
-    live: "https://github.com/Rio2802",
-    github: "https://github.com/Rio2802",
+    live: "https://github.com/Rio2802/IPFS_IMG_upload",
+    github: "https://github.com/Rio2802/IPFS_IMG_upload",
     get content() {
       return (
         <div>
           <TypographyP className="font-mono ">
-            Created a complete web app with secure CRUD operations available for both admin and user roles.
-            Frontend and backend were connected together resulting in smooth data management and 20% faster processing.
-            Introduced different types of authentications and improved the database queries.
+            IPFS-based secure image uploader
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "edubot",
+    category: "AI & Education",
+    title: "EDUBot",
+    src: "/assets/projects-screenshots/edubot/1.png",
+    screenshots: ["/assets/projects-screenshots/edubot/1.png"],
+    skills: {
+      frontend: [],
+      backend: [PROJECT_SKILLS.python],
+    },
+    live: "https://github.com/Rio2802/EDUBot",
+    github: "https://github.com/Rio2802/EDUBot",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            RAG chatbot for interactive learning
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "chat-with-pdf",
+    category: "AI & NLP",
+    title: "Chat With PDF",
+    src: "/assets/projects-screenshots/chat-with-pdf/1.png",
+    screenshots: ["/assets/projects-screenshots/chat-with-pdf/1.png"],
+    skills: {
+      frontend: [],
+      backend: [PROJECT_SKILLS.python, PROJECT_SKILLS.aws],
+    },
+    live: "https://github.com/Rio2802/ChatWithPDF",
+    github: "https://github.com/Rio2802/ChatWithPDF",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            RAG-based application for chatting with PDF documents using Titan Embedding Model and FAISS.
+          </TypographyP>
+          <ProjectsLinks live={this.live} repo={this.github} />
+        </div>
+      );
+    },
+  },
+  {
+    id: "portfolio",
+    category: "Web Development",
+    title: "Portfolio",
+    src: "/assets/projects-screenshots/portfolio/1.png",
+    screenshots: ["/assets/projects-screenshots/portfolio/1.png"],
+    skills: {
+      frontend: [PROJECT_SKILLS.html, PROJECT_SKILLS.css, PROJECT_SKILLS.js],
+      backend: [],
+    },
+    live: "https://github.com/Rio2802/Portfolio",
+    github: "https://github.com/Rio2802/Portfolio",
+    get content() {
+      return (
+        <div>
+          <TypographyP className="font-mono ">
+            My personal portfolio website
           </TypographyP>
           <ProjectsLinks live={this.live} repo={this.github} />
         </div>
